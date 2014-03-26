@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/feedtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feedtitledata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/feedtitle"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/feedlink"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/feedtitle"
+        android:gravity="center_vertical"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feedlinkdata"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/feedtitle"
+        android:layout_toRightOf="@id/feedlink"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/feeddescription"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/feedlink"
+        android:gravity="center_vertical"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feeddescriptiondata"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/feedlink"
+        android:layout_toRightOf="@id/feeddescription"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>

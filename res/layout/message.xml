@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/msgtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msgtitledata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/msgtitle"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/msgdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/msgtitle"
+        android:gravity="center_vertical"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msgdescriptiondata"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/msgtitle"
+        android:layout_toRightOf="@id/msgdescription"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/msgauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/msgdescription"
+        android:gravity="center_vertical"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msgauthordata"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/msgdescription"
+        android:layout_toRightOf="@id/msgauthor"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/msglink"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/msgauthor"
+        android:gravity="center_vertical"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msglinkdata"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/msgauthor"
+        android:layout_toRightOf="@id/msglink"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/msgpubdate"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/msglink"
+        android:gravity="center_vertical"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msgpubdatedata"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/msglink"
+        android:layout_toRightOf="@id/msgpubdate"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>
